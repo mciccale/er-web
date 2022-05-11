@@ -24,7 +24,7 @@ if (isset($_POST['search_boss'])) {
         while($r = $query->fetch_object()) {
             ?>
                 <div class="result">
-                    <a href="#"><?php echo $r->name . ", " . $r->description; ?></a>
+                    <h3><?php echo $r->name . ", " . $r->description; ?></h3>
                 </div>
             <?php
         }
