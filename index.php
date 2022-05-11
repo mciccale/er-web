@@ -27,7 +27,7 @@
         </form>
       </div>
     </div>
-    <div class="col-md-8">
+    <!-- <div class="col-md-8">
 
         <table class="table tablebordered">
           <thead>
@@ -40,7 +40,7 @@
           <tbody>
             
           </tbody>
-        </table>
+        </table> -->
     </div>
   </div>
 </div>
