@@ -2,6 +2,8 @@
 
 include("db.php");
 
+include("includes/header.php");
+
 if (isset($_POST['search_boss'])) {
     // CHECK THE INPUT
     if ($_POST['name'] == '') { echo "No Input Given"; exit();}
@@ -23,8 +25,8 @@ if (isset($_POST['search_boss'])) {
     if ($query->num_rows) {
         while($r = $query->fetch_object()) {
             ?>
-                <div class="result">
-                    <h3><?php echo $r->name . ", " . $r->description; ?></h3>
+                <div class="row">
+                    <a href="#"><?php echo $r->name . ", " . $r->description; ?></a>
                 </div>
             <?php
         }
